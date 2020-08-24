@@ -1,7 +1,7 @@
 {% if include.list %}
 	<ul>
 		{% for entry in include.list %}
-			<li>
+			<li> Home
 				<a href="{{ entry.href | replace_first: "/", "%%/" | replace: "%%//", "//" | replace: "%%", site.baseurl }}">
 					{% assign children = entry.children | map: "href" %}
 
@@ -12,6 +12,12 @@
 					{% endif %}
 				</a>
 				{% include menu.liquid list=entry.children %}
+			</li>
+			<li>
+				About me
+			</li>
+			<li>
+				portfolio
 			</li>
 		{% endfor %}
 	</ul>
