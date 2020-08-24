@@ -34,6 +34,20 @@
 			<p>{{ site.description }}</p>
 		</div>
 		<input hidden type="checkbox" id="ballot">
+		<nav class="menu">
+	<ul>
+		<li> <a href="https://jdh8.org/"> Home </a> </li>
+		<li> <a href="/about/"> About me </a> </li>
+		<li> <a href="/tools/"> Tools </a>
+		<ul>
+			<li> <a href="/tools/asm-js-minifier/"> Asm.js minifier </a> </li>	
+			<li> <a href="/tools/prime/"> Primality test </a> </li>
+			<li> <a href="/tools/whiteboard/"> Whiteboard </a> </li>
+		</ul>
+		</li>
+	</ul>
+
+</nav>
 		<label class="toggle" for="ballot">Menu</label>
 		{% include navigation.liquid %}
 	</header>
